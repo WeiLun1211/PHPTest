@@ -6,10 +6,20 @@ pipeline {
         sh 'php --version'
       }
     }
-    stage('hello') {
-      steps {
-        sh 'php hello.php'
-      }
+    stage('Build') {
+        steps {
+            echo 'Building..'
+        }
+    }
+    stage('Test') {
+        steps {
+            echo 'Testing..'
+        }
+    }
+    stage('Deploy') {
+        steps {
+            echo 'Deploying....'
+        }
     }
   }
 }
