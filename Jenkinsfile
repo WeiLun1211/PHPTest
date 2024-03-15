@@ -21,5 +21,11 @@ pipeline {
             echo 'Deploying....'
         }
     }
+    stage('Testing') {
+      steps {
+        sh 'chmod +x vendor/bin/phpunit'
+        sh 'vendor/bin/phpunit --testsuite MyTest2'
+      }
+    }
   }
 }
