@@ -6,7 +6,7 @@
             <directory>tests\Unit\MyTest</directory>
         </testsuite>
         <testsuite name="MyTest2">
-            <file>tests\Unit\MyTest.php</file>
+            <file>tests/Unit/MyTest.php</file>
         </testsuite>
     </testsuites>
 </phpunit>
